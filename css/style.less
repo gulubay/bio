@@ -7,6 +7,8 @@ body{
 
 	/*background-color: grey;*/
 }
+
+
 section{
 	height: 600px;
 	width: 100%;
@@ -218,32 +220,52 @@ section{
 #mySkills{
 	height: 100%;
 	position: relative;
-	background-color: #000;
+	background-color: #2d3436;
+	padding-bottom: 15%;
 	width: 100%;
-	
+	color: #fff;
+	.description{
+			width: 80%;
+			margin: 0 auto;
+			text-align: center;
+			margin-top: 20px;
+		}
+	#skillsHeading{
+		font-size: 4rem;
+	}
 	.imgContainer{
 		width: 80%;
 		height: 15rem;
 		margin: 0 auto;
-		margin-top: 100px;
+		margin-top: 80px;
 		border-radius: 10px;
 		background: #fff;
 		color: #fff;
+
 		.imgTitle{
 			position: absolute;
 			left: 0;
 			right: 0;
+			margin-top: 21%;
 			// margin-top: 50%;
 			z-index: 1;
 		}
 	}
-	.absolute{
-		position: absolute;
+	.overlay{
+		// position: absolute;
 		margin:0;
 		width: 100%;
-		background: #ef6630;
 		opacity: .6;
 		// z-index: -1;
+	}
+	.orange{
+		background: #ef6630;
+	}
+	.green{
+		background: #27ae60;
+	}
+	.red{
+		background: #c0392b;
 	}
 	.BilisummaaGraphic{
 		position: relative;
@@ -259,7 +281,101 @@ section{
 	}
 	.oyicGraphic{
 		position: relative;
-		background: url('../images/osay.jpg')50%;
+		background: url('../images/oyic.png')50%;
 		background-size: cover;
 	}
+	.osayGraphic{
+		position: relative;
+		background: url('../images/OSAY_gadaa.png')50%;
+		background-size: cover;
+	}
+}
+#hireMe{
+	background: linear-gradient(to bottom right, #ff6a00, #ee0979);
+	color: #d3d8f2;
+	.letters{
+		position: relative;
+		z-index: 2;
+	}
+	.highlight{
+		position: absolute;
+		background: #ae30f0;
+		height: 4.4rem;
+		width: 25px;
+		z-index: 1;
+	}
+	.highlightT{
+		margin-top: -8px;
+		margin-left: -5px;
+			
+		}
+	.highlightO{
+		// margin-top: -8px;
+		width: 32px;
+		margin-left: 10px;
+
+			
+		}
+	.highlightE{
+		// margin-top: -8px;
+		// margin-left: -1px;
+			
+		}
+	// 	span{
+	// 		position: absolute;
+	// 	}
+	// .space{
+	// 	margin-left: 135px;
+	// 	}
+	h1{
+		font-size:4.4rem;
+		// float: right;
+		
+	}
+	img{
+		height: 530px;
+		position: absolute;
+		left: -30px;
+		margin-top: 70px;
+	}
+	.textWrapper{
+		position: relative;
+		margin-top: 30%;
+		width: 70%;
+		float: right;
+		z-index: 3;
+		
+		button{
+			border: 2px solid #d3d8f2;
+			border-radius: 7px;
+			padding: 5px 15px;
+			float: right;
+			margin-right: 20px;
+			margin-top: 40px;
+			background: transparent;
+		}
+	}
+}
+
+footer{
+	height:200px;
+	width: 100%;
+	background: #d3d8f2;
+	color: #000;
+	.padding-0{
+		padding-left: 0;
+		padding-right: 0;
+	}
+	.mediaWidth{
+		width: 186px;
+		
+	}
+	.textWrapper{
+		margin-top: 70px;
+	}
+
+	.col-xs-2{
+		width: 19%;
+	}
+	
 }

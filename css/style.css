@@ -187,14 +187,25 @@ section {
 #mySkills {
   height: 100%;
   position: relative;
-  background-color: #000;
+  background-color: #2d3436;
+  padding-bottom: 15%;
   width: 100%;
+  color: #fff;
+}
+#mySkills .description {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 20px;
+}
+#mySkills #skillsHeading {
+  font-size: 4rem;
 }
 #mySkills .imgContainer {
   width: 80%;
   height: 15rem;
   margin: 0 auto;
-  margin-top: 100px;
+  margin-top: 80px;
   border-radius: 10px;
   background: #fff;
   color: #fff;
@@ -203,14 +214,22 @@ section {
   position: absolute;
   left: 0;
   right: 0;
+  margin-top: 21%;
   z-index: 1;
 }
-#mySkills .absolute {
-  position: absolute;
+#mySkills .overlay {
   margin: 0;
   width: 100%;
-  background: #ef6630;
   opacity: .6;
+}
+#mySkills .orange {
+  background: #ef6630;
+}
+#mySkills .green {
+  background: #27ae60;
+}
+#mySkills .red {
+  background: #c0392b;
 }
 #mySkills .BilisummaaGraphic {
   position: relative;
@@ -224,6 +243,78 @@ section {
 }
 #mySkills .oyicGraphic {
   position: relative;
-  background: url('../images/osay.jpg') 50%;
+  background: url('../images/oyic.png') 50%;
   background-size: cover;
+}
+#mySkills .osayGraphic {
+  position: relative;
+  background: url('../images/OSAY_gadaa.png') 50%;
+  background-size: cover;
+}
+#hireMe {
+  background: linear-gradient(to bottom right, #ff6a00, #ee0979);
+  color: #d3d8f2;
+}
+#hireMe .letters {
+  position: relative;
+  z-index: 2;
+}
+#hireMe .highlight {
+  position: absolute;
+  background: #ae30f0;
+  height: 4.4rem;
+  width: 25px;
+  z-index: 1;
+}
+#hireMe .highlightT {
+  margin-top: -8px;
+  margin-left: -5px;
+}
+#hireMe .highlightO {
+  width: 32px;
+  margin-left: 10px;
+}
+#hireMe h1 {
+  font-size: 4.4rem;
+}
+#hireMe img {
+  height: 530px;
+  position: absolute;
+  left: -30px;
+  margin-top: 70px;
+}
+#hireMe .textWrapper {
+  position: relative;
+  margin-top: 30%;
+  width: 70%;
+  float: right;
+  z-index: 3;
+}
+#hireMe .textWrapper button {
+  border: 2px solid #d3d8f2;
+  border-radius: 7px;
+  padding: 5px 15px;
+  float: right;
+  margin-right: 20px;
+  margin-top: 40px;
+  background: transparent;
+}
+footer {
+  height: 200px;
+  width: 100%;
+  background: #d3d8f2;
+  color: #000;
+}
+footer .padding-0 {
+  padding-left: 0;
+  padding-right: 0;
+}
+footer .mediaWidth {
+  width: 186px;
+}
+footer .textWrapper {
+  margin-top: 70px;
+}
+footer .col-xs-2 {
+  width: 19%;
 }
