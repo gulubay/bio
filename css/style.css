@@ -9,6 +9,7 @@ body {
 section {
   height: 600px;
   width: 100%;
+  overflow: hidden;
 }
 #home {
   color: #fff;
@@ -55,22 +56,23 @@ section {
 }
 #home #img-bg #logo {
   height: 50px;
-  margin-top: 50%;
+  margin-top: 30%;
   margin-bottom: 40px;
 }
 #home #img-bg #hireMe {
   background: none;
-  font-size: 15px;
+  font-size: 1.1rem;
   padding: 0;
   border: 3px solid white;
   border-radius: 10px;
-  padding: 15px;
+  padding: 10px;
   margin-top: 25%;
 }
 #home #img-bg #aboutMe {
   color: #9de8ef;
   margin-top: 70px;
   margin-bottom: 0;
+  font-size: 1.1rem;
 }
 #home #img-bg .chev {
   color: #9de8ef;
@@ -80,12 +82,14 @@ section {
   width: 100%;
   color: #142527;
 }
+#expertise h1 {
+  font-size: 2em;
+}
 #expertise #expertiseHeading {
-  font-size: 4rem;
   margin-bottom: 50px;
 }
 #expertise p {
-  font-size: 1.8rem;
+  font-size: 1.1rem;
   color: grey;
 }
 #expertise .bulletPoint {
@@ -185,6 +189,7 @@ section {
   margin: 160px 0 0 180px;
 }
 #mySkills {
+  overflow: hidden;
   height: 100%;
   position: relative;
   background-color: #2d3436;
@@ -251,7 +256,11 @@ section {
   background: url('../images/OSAY_gadaa.png') 50%;
   background-size: cover;
 }
+#mySkills h4 {
+  font-size: 1rem;
+}
 #hireMe {
+  overflow: hidden;
   background: linear-gradient(to bottom right, #ff6a00, #ee0979);
   color: #d3d8f2;
 }
