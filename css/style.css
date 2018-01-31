@@ -82,7 +82,8 @@ section {
   width: 100%;
   color: #142527;
 }
-#expertise h1 {
+#expertise h1,
+#expertise h2 {
   font-size: 2em;
 }
 #expertise #expertiseHeading {
@@ -204,7 +205,7 @@ section {
   margin-top: 20px;
 }
 #mySkills #skillsHeading {
-  font-size: 4rem;
+  font-size: 2rem;
 }
 #mySkills .imgContainer {
   width: 80%;
@@ -257,11 +258,11 @@ section {
   background-size: cover;
 }
 #mySkills h4 {
-  font-size: 1rem;
+  font-size: 1.4rem;
 }
 #hireMe {
   overflow: hidden;
-  background: linear-gradient(to bottom right, #ff6a00, #ee0979);
+  background: linear-gradient(to bottom left, #ff6a00, #ee0979);
   color: #d3d8f2;
 }
 #hireMe .letters {
@@ -284,7 +285,7 @@ section {
   margin-left: 10px;
 }
 #hireMe h1 {
-  font-size: 4.4rem;
+  font-size: 4rem;
 }
 #hireMe img {
   height: 530px;
@@ -295,7 +296,7 @@ section {
 #hireMe .textWrapper {
   position: relative;
   margin-top: 30%;
-  width: 70%;
+  width: 80%;
   float: right;
   z-index: 3;
 }
