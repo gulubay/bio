@@ -25,6 +25,7 @@ section {
   position: absolute;
   height: 100%;
   width: 100%;
+  object-fit: cover;
   z-index: -1;
 }
 #home #img-bg #grad {
@@ -56,18 +57,19 @@ section {
 }
 #home #img-bg #logo {
   height: 50px;
-  margin-top: 30%;
+  margin-top: 130px;
   margin-bottom: 40px;
 }
 #home #img-bg #hireMe {
   background: none;
   font-size: 1.1rem;
   padding: 0;
+  color: #fff;
   border: 3px solid white;
   border-radius: 10px;
   padding: 10px;
-  margin-top: 10%;
-  margin-bottom: 100px;
+  margin-top: 20px;
+  margin-bottom: 120px;
 }
 #home #img-bg #aboutMe {
   color: #9de8ef;
@@ -82,10 +84,11 @@ section {
   height: 100%;
   width: 100%;
   color: #142527;
+  padding-bottom: 100px;
 }
 #expertise h1,
 #expertise h2 {
-  font-size: 2em;
+  font-size: 2.8rem;
 }
 #expertise #expertiseHeading {
   margin-bottom: 50px;
@@ -94,7 +97,7 @@ section {
   padding-bottom: 20px;
 }
 #expertise p {
-  font-size: 1.1rem;
+  font-size: 1.4rem;
   color: grey;
 }
 #expertise .bulletPoint {
@@ -104,9 +107,11 @@ section {
   color: #9de8ef;
 }
 #myWork {
+  position: relative;
   height: 100%;
   width: 100%;
   background: url('../images/camera-laptop.jpg') 75%;
+  background-attachment: fixed;
   background-size: cover;
   color: #fff;
 }
@@ -195,6 +200,15 @@ section {
 #myWork #workHeading .letterK {
   margin: 160px 0 0 180px;
 }
+#myWork .container-fluid {
+  padding: 0;
+}
+#myWork .container-fluid .col-xs-6 {
+  padding: 0;
+}
+#myWork .container-fluid .photoshoot {
+  width: 100%;
+}
 #mySkills {
   overflow: hidden;
   height: 100%;
@@ -211,11 +225,11 @@ section {
   margin-top: 20px;
 }
 #mySkills #skillsHeading {
-  font-size: 2rem;
+  font-size: 2.8rem;
 }
 #mySkills .imgContainer {
   width: 80%;
-  height: 15rem;
+  height: 180px;
   margin: 0 auto;
   margin-top: 80px;
   border-radius: 10px;
@@ -226,7 +240,7 @@ section {
   position: absolute;
   left: 0;
   right: 0;
-  margin-top: 21%;
+  margin-top: 75px;
   z-index: 1;
 }
 #mySkills .overlay {
@@ -248,13 +262,9 @@ section {
   background: url('../images/adaaline-oromo.jpg') 50%;
   background-size: cover;
 }
-#mySkills .BilisummaaGraphic h1 {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 2.4rem;
-}
 #mySkills .oyicGraphic {
   position: relative;
-  background: url('../images/Oyic.jpg') 50%;
+  background: url('../images/oyic.jpg') 50%;
   background-size: cover;
 }
 #mySkills .osayGraphic {
@@ -264,6 +274,7 @@ section {
 }
 #mySkills h4 {
   font-size: 1.4rem;
+  color: #dfe6e9;
 }
 #hireMe {
   overflow: hidden;
@@ -332,4 +343,9 @@ footer .textWrapper {
 }
 footer .col-xs-2 {
   width: 19%;
+}
+@media (min-width: 548px) {
+  #myWork .container {
+    width: 300px;
+  }
 }

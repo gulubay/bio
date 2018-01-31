@@ -27,6 +27,7 @@ section{
 			position: absolute;
 			height: 100%;
 			width: 100%;
+			object-fit: cover;
 			z-index: -1;
 		}
 		#grad{
@@ -59,7 +60,7 @@ section{
 		}
 		#logo{
 			height: 50px;
-			margin-top: 30%;
+			margin-top: 130px;
 			margin-bottom: 40px;
 		}
 
@@ -68,11 +69,12 @@ section{
 			background: none;
 			font-size: 1.1rem;
 			padding: 0;
+			color: #fff;
 			border: 3px solid white;
 			border-radius: 10px;
 			padding: 10px;
-			margin-top: 10%;
-			margin-bottom: 100px;
+			margin-top: 20px;
+			margin-bottom: 120px;
 		}
 		
 		#aboutMe{
@@ -88,11 +90,13 @@ section{
 }
 
 #expertise{
+
 	height: 100%;
 	width: 100%;
 	color: #142527;
+	padding-bottom: 100px;
 	h1, h2{
-		font-size: 2em;
+		font-size: 2.8rem;
 	}
 	#expertiseHeading{
 		margin-bottom: 50px;
@@ -101,7 +105,7 @@ section{
 		padding-bottom: 20px;
 	}
 	p{
-		font-size: 1.1rem;
+		font-size: 1.4rem;
 		color: grey;
 	}
 	.bulletPoint{
@@ -115,9 +119,11 @@ section{
 }
 
 #myWork{
+	position: relative;
 	height: 100%;
 	width: 100%;
 	background: url('../images/camera-laptop.jpg')75%;
+	background-attachment: fixed;
 	background-size: cover;
 	color: #fff;
 	.container{
@@ -213,6 +219,7 @@ section{
 				margin: 160px 0 0 180px;
 		}
 
+
 		
 
 	}
@@ -224,6 +231,18 @@ section{
 	// 		width: 100%;
 	// 		z-index: -1;
 	// 	}
+	.container-fluid{
+		padding: 0;
+
+		.col-xs-6{
+			padding: 0;
+			// clear:both;
+		}
+	.photoshoot{
+			// height: 10%;
+			width: 100%;
+		}
+	}
 }
 
 #mySkills{
@@ -241,11 +260,11 @@ section{
 			margin-top: 20px;
 		}
 	#skillsHeading{
-		font-size: 2rem;
+		font-size: 2.8rem;
 	}
 	.imgContainer{
 		width: 80%;
-		height: 15rem;
+		height: 180px;
 		margin: 0 auto;
 		margin-top: 80px;
 		border-radius: 10px;
@@ -256,7 +275,8 @@ section{
 			position: absolute;
 			left: 0;
 			right: 0;
-			margin-top: 21%;
+			margin-top: 75px;
+			// margin-top: 21%;
 			// margin-top: 50%;
 			z-index: 1;
 		}
@@ -281,17 +301,10 @@ section{
 		position: relative;
 		background: url('../images/adaaline-oromo.jpg')50%;
 		background-size: cover;
-		h1{
-			font-family: 'Montserrat', sans-serif;
-			font-size: 2.4rem;	
-			// font-weight: 300;
-		}
-		// background: #ef6630;
-		// opacity: .8;
 	}
 	.oyicGraphic{
 		position: relative;
-		background: url('../images/Oyic.jpg')50%;
+		background: url('../images/oyic.jpg')50%;
 		background-size: cover;
 	}
 	.osayGraphic{
@@ -301,6 +314,7 @@ section{
 	}
 	h4{
 		font-size:1.4rem;
+		color:#dfe6e9;
 	}
 }
 #hireMe{
@@ -392,4 +406,15 @@ footer{
 		width: 19%;
 	}
 	
+}
+
+@media  (min-width: 548px){
+	#home {
+	
+	}
+	#myWork {
+		.container{
+			width: 300px
+		}
+	}
 }
