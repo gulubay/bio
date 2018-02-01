@@ -111,16 +111,25 @@ section {
   height: 100%;
   width: 100%;
   background: url('../images/camera-laptop.jpg') 75%;
-  background-attachment: fixed;
   background-size: cover;
   color: #fff;
 }
 #myWork .container {
+  padding-top: 50px;
   padding-bottom: 20%;
+}
+#myWork h4 {
+  filter: invert(0%);
+}
+#myWork #moreExamples {
+  margin-top: 300px;
+}
+#myWork #moreExamples a {
+  color: #9de8ef;
 }
 #myWork #blsma-logo {
   height: 90px;
-  margin-top: 350px;
+  margin-top: 50px;
   float: left;
   -webkit-filter: invert(100%);
   -moz-filter: invert(100%);
@@ -129,7 +138,7 @@ section {
 }
 #myWork #brandi-logo {
   height: 40px;
-  margin-top: 385px;
+  margin-top: 85px;
   float: left;
   -webkit-filter: invert(0%);
   -moz-filter: invert(0%);
@@ -151,8 +160,9 @@ section {
 #myWork #workHeading {
   position: relative;
   width: 100%;
+  width: 248px;
   padding-top: 50px;
-  padding-left: 40px;
+  margin: 0 auto;
 }
 #myWork #workHeading .underlineSlant {
   position: absolute;
@@ -311,7 +321,7 @@ section {
 }
 #hireMe .textWrapper {
   position: relative;
-  margin-top: 30%;
+  margin-top: 106px;
   width: 80%;
   float: right;
   z-index: 3;
