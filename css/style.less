@@ -17,6 +17,9 @@ section{
 #home{
 	color: #fff;
 	height: 100vh;
+	.mgWrapper{
+			display: none;
+		}
 	#img-bg{
 		position: relative;
 		width: 100%;
@@ -48,8 +51,8 @@ section{
 			h3{
 				font-size: 1.5rem;
 			}
-		#photographer, #designer{
-			display: none;
+		#graphic{
+			font-size: 3.7rem;
 		}
 
 		.text{
@@ -74,13 +77,14 @@ section{
 			border-radius: 10px;
 			padding: 10px;
 			margin-top: 20px;
-			margin-bottom: 120px;
+			// margin-bottom: 120px;
 		}
 		
 		#aboutMe{
 			color: #9de8ef;
-			margin-top: 70px;
-			margin-bottom: 0;
+			margin-top: 200px;
+			display: block;
+			// margin-bottom: 0;
 			font-size: 1.1rem;
 		}
 		.chev{
@@ -274,6 +278,11 @@ section{
 			text-align: center;
 			margin-top: 20px;
 		}
+
+	.center-width{
+		width: 90%;
+		margin: 0 auto;
+	}
 	#skillsHeading{
 		font-size: 2.8rem;
 	}
@@ -332,7 +341,7 @@ section{
 		color:#dfe6e9;
 	}
 }
-#hireMe{
+#hireMePage{
 	overflow: hidden;
 	background: linear-gradient(to bottom left, #ff6a00, #ee0979);
 	color: #d3d8f2;
@@ -430,6 +439,50 @@ footer{
 	#myWork {
 		.container{
 			width: 300px
+		}
+	}
+}
+@media (min-width: 1148px){
+	#home{
+		position: relative;
+		// .mgWrapper{
+		// 	width: 300px;
+		// }
+		.mgWrapper{
+			display: block;
+			position: absolute;
+			margin-left: 50px;
+			width: 300px;
+			height: 100%;
+			.verticalLine{
+				position: absolute;
+				border-left: 10px solid #fff;
+				height: 33vh;
+				z-index: 1;
+				margin-left: 115px;
+			}
+			.linTwo{
+				margin-top: 63vh;
+				height: 39vh
+			}
+		}	
+		#mg-logo2{
+			margin-top: 250px;
+			position: absolute;
+			z-index: 1;
+		}
+		#img-bg{
+			#img-x{
+				object-fit: contain;
+				height: 1261px;
+    			margin-top: 11px;
+    			padding-right: 300px;
+			}
+			#logo{
+				visibility: hidden;
+				transition: all 0.2s;
+			// display: none;
+			}
 		}
 	}
 }
