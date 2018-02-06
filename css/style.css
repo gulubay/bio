@@ -15,6 +15,9 @@ section {
   color: #fff;
   height: 100vh;
 }
+#home .mgWrapper {
+  display: none;
+}
 #home #img-bg {
   position: relative;
   width: 100%;
@@ -47,9 +50,8 @@ section {
 #home #img-bg h3 {
   font-size: 1.5rem;
 }
-#home #img-bg #photographer,
-#home #img-bg #designer {
-  display: none;
+#home #img-bg #graphic {
+  font-size: 3.7rem;
 }
 #home #img-bg .text {
   width: 340px;
@@ -69,12 +71,11 @@ section {
   border-radius: 10px;
   padding: 10px;
   margin-top: 20px;
-  margin-bottom: 120px;
 }
 #home #img-bg #aboutMe {
   color: #9de8ef;
-  margin-top: 70px;
-  margin-bottom: 0;
+  margin-top: 200px;
+  display: block;
   font-size: 1.1rem;
 }
 #home #img-bg .chev {
@@ -234,6 +235,10 @@ section {
   text-align: center;
   margin-top: 20px;
 }
+#mySkills .center-width {
+  width: 90%;
+  margin: 0 auto;
+}
 #mySkills #skillsHeading {
   font-size: 2.8rem;
 }
@@ -286,47 +291,47 @@ section {
   font-size: 1.4rem;
   color: #dfe6e9;
 }
-#hireMe {
+#hireMePage {
   overflow: hidden;
   background: linear-gradient(to bottom left, #ff6a00, #ee0979);
   color: #d3d8f2;
 }
-#hireMe .letters {
+#hireMePage .letters {
   position: relative;
   z-index: 2;
 }
-#hireMe .highlight {
+#hireMePage .highlight {
   position: absolute;
   background: #ae30f0;
   height: 4.4rem;
   width: 25px;
   z-index: 1;
 }
-#hireMe .highlightT {
+#hireMePage .highlightT {
   margin-top: -8px;
   margin-left: -5px;
 }
-#hireMe .highlightO {
+#hireMePage .highlightO {
   width: 32px;
   margin-left: 10px;
 }
-#hireMe h1 {
+#hireMePage h1 {
   font-size: 4rem;
 }
-#hireMe img {
+#hireMePage img {
   height: 530px;
   position: absolute;
   left: -30px;
   margin-top: 70px;
 }
-#hireMe .textWrapper {
+#hireMePage .textWrapper {
   position: relative;
   margin-top: 106px;
   width: 80%;
   float: right;
   z-index: 3;
 }
-#hireMe .textWrapper button {
+#hireMePage .textWrapper button {
   border: 2px solid #d3d8f2;
   border-radius: 7px;
   padding: 5px 15px;
@@ -357,5 +362,43 @@ footer .col-xs-2 {
 @media (min-width: 548px) {
   #myWork .container {
     width: 300px;
+  }
+}
+@media (min-width: 1148px) {
+  #home {
+    position: relative;
+  }
+  #home .mgWrapper {
+    display: block;
+    position: absolute;
+    margin-left: 50px;
+    width: 300px;
+    height: 100%;
+  }
+  #home .mgWrapper .verticalLine {
+    position: absolute;
+    border-left: 10px solid #fff;
+    height: 33vh;
+    z-index: 1;
+    margin-left: 115px;
+  }
+  #home .mgWrapper .linTwo {
+    margin-top: 63vh;
+    height: 39vh;
+  }
+  #home #mg-logo2 {
+    margin-top: 250px;
+    position: absolute;
+    z-index: 1;
+  }
+  #home #img-bg #img-x {
+    object-fit: contain;
+    height: 1261px;
+    margin-top: 11px;
+    padding-right: 300px;
+  }
+  #home #img-bg #logo {
+    visibility: hidden;
+    transition: all 0.2s;
   }
 }
