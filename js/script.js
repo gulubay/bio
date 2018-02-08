@@ -30,4 +30,44 @@ function changeText(){
 }
 
 
+// $('#startContact').click(function(){
+// 	$('.contactForm').style.display = "block";
+// })
+ 
+ 
+function startContact(){
+	var contactPage = document.getElementById('contactPage');
+	contactPage.style.display= 'block';
+	 $("#contactPage").animate({height: "100%"});
+	if(contactPage.style.display = 'block'){
+		document.getElementsByTagName("BODY")[0].style.overflow ="hidden";
+	}
+}
+
+function closePage(){
+	var contactPage = document.getElementById('contactPage');
+	document.getElementsByTagName("BODY")[0].style.overflow ="scroll";
+	$("#contactPage").animate({height: "0%"});
+
+setTimeout(
+  function() 
+  {
+    
+	if(contactPage.style.height="0%"){
+			contactPage.style.display= 'none';
+		}
+	
+  }, 350);
+
+	}
+
+	
+
+
+
+	
+	// document.getElementById('contactPage').style.display= 'none';
+
+
+// }
 

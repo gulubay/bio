@@ -4,6 +4,7 @@
 
 body{
 	font-family: 'Josefin Sans', sans-serif;
+	// overflow: hidden;
 
 	/*background-color: grey;*/
 }
@@ -14,6 +15,54 @@ section{
 	width: 100%;
 	overflow: hidden;
 }
+.contactForm{
+		position: fixed;
+		width: 100%;
+		height: 0px;
+		background:#2d3436;
+		color: #d3d8f2;
+		z-index: 4; 
+		display: none;
+		// text-align: center;
+
+		input, textarea{
+			display: block;
+			background: none;
+			margin-top: 10px;
+			border: 2px solid;
+			border-radius: 5px;
+			padding: 7px;
+			width: 100%;
+		}
+		#message{
+			padding-bottom: 50px;
+		}
+		.fa-times-circle{
+			float: right;
+			margin-top:20px;
+		}
+		#contactHeading{
+			font-size:2rem;
+			margin: 0 auto;
+		}
+		#contactDescription{
+			font-size: 1.5rem;
+			color: grey;
+		}
+		#btn{
+			width: 50%;
+    		margin: 0 auto;
+    		background: #2d3436;
+			color: #d3d8f2;
+    		 
+    		margin-top: 30px;
+		}
+		#btn:hover{
+			background: #d3d8f2;
+    		color:#2d3436;
+
+		}
+	}
 #home{
 	color: #fff;
 	height: 100vh;
@@ -114,11 +163,11 @@ section{
 	}
 	.bulletPoint{
 		margin-top: 30px;
+		.blue{
+		color: #9de8ef;
+		}
 	}
 
-	i{
-		color: #9de8ef;
-	}
 
 }
 
@@ -295,6 +344,8 @@ section{
 		background: #fff;
 		color: #fff;
 
+		
+
 		.imgTitle{
 			position: absolute;
 			left: 0;
@@ -451,27 +502,58 @@ footer{
 		.mgWrapper{
 			display: block;
 			position: absolute;
-			margin-left: 50px;
+			margin-left: 10px;
 			width: 300px;
 			height: 100%;
 			.verticalLine{
 				position: absolute;
 				border-left: 10px solid #fff;
-				height: 33vh;
+				height: 35vh;
 				z-index: 1;
-				margin-left: 115px;
+				margin-left: 94px;
 			}
 			.linTwo{
-				margin-top: 63vh;
-				height: 39vh
+				// margin-top: 66vh;
+				height: 40vh;
+				// position:absolute;
+				z-index: 1;
 			}
 		}	
 		#mg-logo2{
-			margin-top: 250px;
-			position: absolute;
+			margin-top: 35vh;
+			height: 200px;
+			position: relative;
+			right: 0;
+			left: 0;
+
 			z-index: 1;
 		}
 		#img-bg{
+			h1, #graphic{
+				font-size:8rem;
+				font-weight: 300;
+			}
+
+			.text{
+				width: 680px;
+				margin-top: 100px
+				
+			}
+
+			h3{
+				font-weight:400;
+				font-size: 2rem;
+			}
+
+			#hireMe{
+				font-size: 1.6rem;
+				padding: 10px 15px;
+				// padding: 20px;
+			}
+			#aboutMe{
+				margin-top: 20px;
+			}
+
 			#img-x{
 				object-fit: contain;
 				height: 1261px;
@@ -484,5 +566,6 @@ footer{
 			// display: none;
 			}
 		}
+
 	}
 }
