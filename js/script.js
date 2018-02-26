@@ -6,6 +6,14 @@ $(document).on('click', 'a[href^="#"]', function (event) {
     }, 1000);
 });
 
+// function myFunction() {
+//     var element = document.getElementById("bounceOne");
+//     element.classList.add("animated bounce");
+// }
+
+
+
+
 var work = ['PHOTOGRAPHER', '<span id= "graphic"> GRAPHIC DESIGNER </span>', 'WEB DEVELOPER'];
 var result = [];
 var x = 0;
@@ -29,11 +37,6 @@ function changeText(){
 
 }
 
-
-// $('#startContact').click(function(){
-// 	$('.contactForm').style.display = "block";
-// })
- 
  
 function startContact(){
 	var contactPage = document.getElementById('contactPage');
@@ -41,6 +44,7 @@ function startContact(){
 	 $("#contactPage").animate({height: "100%"});
 	if(contactPage.style.display = 'block'){
 		document.getElementsByTagName("BODY")[0].style.overflow ="hidden";
+
 	}
 }
 
@@ -57,14 +61,69 @@ setTimeout(
 			contactPage.style.display= 'none';
 		}
 	
-  }, 350);
+  }, 250);
 
 	}
 
+// var myVar;
+
+// function myFunction() {
+//     myVar = setInterval(displayImgPage, 1000);
+// }
 	
+function outroOsay(){
+$(function(){
+	$(".animationOsay").addClass("animated bounceOut");	
+});
+
+
+setTimeout(displayImgPage, 1000);
+function displayImgPage(){
+	document.getElementById("skillsImgPage").style.display="block";
+	document.getElementById("imageDisplay").src="images/OSAY_gadaa.jpg";
+}
 
 
 
+}
+
+function outroOyic(){
+$(function(){
+	$(".animationOyic").addClass("animated bounceOut");
+
+});
+
+setTimeout(displayImgPage, 1000);
+function displayImgPage(){
+	document.getElementById("skillsImgPage").style.display="block";
+	document.getElementById("imageDisplay").src="images/Oyic.jpg";
+
+}
+
+}
+
+function outroBilly(){
+
+	$(".animationBilly").addClass("animated bounceOut");	
+
+setTimeout(displayImgPage, 1000);
+function displayImgPage(){
+	document.getElementById("skillsImgPage").style.display="block";
+	document.getElementById("imageDisplay").src="images/adaaline-oromo.jpg";
+}
+
+}
+
+function closeImgPage(){
+	
+	$(".animationOyic").removeClass("animated bounceOut");
+	$(".animationBilly").removeClass("animated bounceOut");
+	$(".animationOsay").removeClass("animated bounceOut");
+
+	document.getElementById("skillsImgPage").style.display="none";
+	// $(".animationOyic").addClass("animated bounceIn");
+	
+}
 	
 	// document.getElementById('contactPage').style.display= 'none';
 

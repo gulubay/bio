@@ -4,6 +4,8 @@
 	<title>Murata Gulube | Web Developer</title>
 	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
+  	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
@@ -17,9 +19,9 @@
 
 
 </head>
-<body  onload ="setInterval(changeText, 1500)">
+<body  onload ="setInterval(changeText, 1000)">
 	<div id="contactPage" class="contactForm">
-		<div class="container">
+		<div class="container formContainer">
 			<div class="row">
 					<div class="col-xs-12">
 						<i class="fas fa-times-circle fa-2x" onClick="closePage()" ></i>
@@ -31,10 +33,10 @@
 					</div>
 				<div class="row">
 					<form action="https://formspree.io/your@email.com" method="POST">
-		      			<div class="col-xs-12">
+		      			<div class="col-xs-12 col-sm-6">
 					    	<input type="text" name="firstName" placeholder="First Name">
 					    </div>
-					    <div class="col-xs-12">
+					    <div class="col-xs-12 col-sm-6">
 					    	<input type="text" name="lastName" placeholder="Last Name">
 						</div>
 						<div class="col-xs-12">
@@ -45,7 +47,7 @@
 					    </div>
 					    </form>
 					    	
-				    </div>	
+				    </div>
 				    <div class="row">
 					    <div class="col-xs-12">
 						    <input id="btn" type="submit" value="Send">
@@ -55,6 +57,16 @@
 			</div>
 		</div>
 	</div>
+	<div id="skillsImgPage">
+	    <div class="container">
+	    	<div class="row">
+	    		<div class="text-center">
+	    			<img id="imageDisplay" src="">
+	    			<i class="fas fa-times-circle fa-2x imgClose" onClick="closeImgPage()" ></i>
+	    		</div>
+	    	</div>	
+	    </div>
+		 </div>
 <section id="home">
 	<div class="mgWrapper">
 		<div class="verticalLine"></div>
@@ -145,7 +157,7 @@
 	</div>
 	<div class="container">
 		<div class="col-xs-6">
-			<a href="">
+			<a href="https://gulubay.github.io/portfolio/brandi/index.html">
 				<img id="brandi-logo" src="images/brandiLogo.png">
 			</a>
 		</div>
@@ -168,7 +180,7 @@
 				<h4>When I'm not working on websites, I'm working on designs</h4>
 			</div>
 			<div class="col-xs-12 col-md-4">
-				<div class="imgContainer oyicGraphic">
+				<div onclick="outroOyic()" class="imgContainer oyicGraphic animationOyic">
 					<div class="text-center">
 						<h1 class="imgTitle">Oyic</h1>
 					</div>
@@ -179,7 +191,7 @@
 			</div>
 
 			<div class="col-xs-12 col-md-4">
-				<div class="imgContainer osayGraphic">
+				<div onclick="outroOsay()" class="imgContainer osayGraphic animationOsay">
 					<div class="text-center">
 						<h1 class="imgTitle">Osay</h1>
 					</div>
@@ -188,7 +200,7 @@
 				<h4 class="description">This is the Oromo Students Association York logo design. A social/cultural group for the students at University York</h4>
 			</div>
 			<div class="col-xs-12 col-md-4">
-				<div class="imgContainer BilisummaaGraphic">
+				<div onclick="outroBilly()" class="imgContainer BilisummaaGraphic animationBilly">
 					<div class="text-center">
 						<h1 class="imgTitle">Bilisummaa</h1>
 					</div>
@@ -211,8 +223,9 @@
 	</h1>
 	
 		<p>I'm currently accepting new projects and would love to hear about yours. Please take a few minutes to tell me about it.</p>
-	
-		<button id="startContact" onClick="startContact()">Get Started</button>
+			<!-- <div class="text-center"> -->
+				<button id="startContact" onClick="startContact()">Get Started</button>
+			<!-- </div> -->
 		</div>
 	</div>
 </section>
@@ -226,19 +239,19 @@
 		<div class="row">
 			<div class="text-center">
 				<div class="col-xs-2">
-					<i class="fa fa-twitter fa-1x" aria-hidden="true"></i>
+					<a href="https://twitter.com/MurataGulubay"><i class="fab fa-twitter fa-1x" aria-hidden="true"></i></a>
 				</div>
 				<div class="col-xs-2">
-					<i class="fa fa-facebook fa-1x" aria-hidden="true"></i>
+					<a href="https://www.facebook.com/Mortatta"><i class="fab fa-facebook fa-1x" aria-hidden="true"></i></a>
 				</div>
 				<div class="col-xs-2">
-					<i class="fa fa-github fa-1x" aria-hidden="true"></i>
+					<a href="https://github.com/gulubay"><i class="fab fa-github fa-1x" aria-hidden="true"></i></a>
 				</div>
 				<div class="col-xs-2">
-					<i class="fa fa-linkedin fa-1x" aria-hidden="true"></i>
+					<a href="https://ca.linkedin.com/in/murata-gulube-801b7b110"><i class="fab fa-linkedin fa-1x" aria-hidden="true"></i></a>
 				</div>
 				<div class="col-xs-2">
-					<i class="fa fa-instagram fa-1x" aria-hidden="true"></i>
+					<a href="instagram.com/vacayszn"><i class="fab fa-instagram fa-1x" aria-hidden="true"></i></a>
 				</div>
 			</div>	
 		</div>
