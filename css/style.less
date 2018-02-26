@@ -15,6 +15,29 @@ section{
 	width: 100%;
 	overflow: hidden;
 }
+#skillsImgPage{
+	display: none;
+	position: fixed;
+		width: 100%;
+		height: 100%;
+		background:#2d3436;
+		color: #d3d8f2;
+		z-index: 4; 
+		// display: none;
+		#imageDisplay{
+			position: absolute;
+		    margin: auto;
+		    top: 0;
+		    left: 0;
+		    right: 0;
+		    bottom: 0;
+		    width: 100%;
+		}
+	.imgClose{
+		float: right;
+		margin-top: 50px;
+	}
+}
 .contactForm{
 		position: fixed;
 		width: 100%;
@@ -35,14 +58,14 @@ section{
 			width: 100%;
 		}
 		#message{
-			padding-bottom: 50px;
+			padding-bottom: 100px;
 		}
 		.fa-times-circle{
 			float: right;
 			margin-top:20px;
 		}
 		#contactHeading{
-			font-size:2rem;
+			font-size:2.4rem;
 			margin: 0 auto;
 		}
 		#contactDescription{
@@ -194,6 +217,7 @@ section{
 		    }
     		
 	}
+
 	#blsma-logo{
 			height: 90px;
 			margin-top: 50px;
@@ -202,6 +226,10 @@ section{
 			 -moz-filter: invert(100%); 
 			 -ms-filter: invert(100%); 
 			 filter: invert(100%); 
+			 opacity: 0.6;
+			 -webkit-transition: 0.3s;
+			 -moz-transition: 0.3s;
+			 transition: 0.3s;
 		}
 	#brandi-logo{
 			height: 40px;
@@ -211,6 +239,17 @@ section{
 			 -moz-filter: invert(0%); 
 			 -ms-filter: invert(0%); 
 			 filter: invert(0%);
+			 opacity: 0.6;
+			 -webkit-transition: 0.3s;
+			 -moz-transition: 0.3s;
+			 transition: 0.3s;
+		}
+		//  h4, #workHeading{
+		// 	opacity: 0.7;
+		// }
+
+		#blsma-logo:hover, #brandi-logo:hover{
+			opacity: 1;
 		}
 	#grad{
 			position: absolute;
@@ -356,6 +395,10 @@ section{
 			z-index: 1;
 		}
 	}
+
+	.imgContainer:hover{
+
+	}
 	.overlay{
 		// position: absolute;
 		margin:0;
@@ -465,6 +508,18 @@ footer{
 	width: 100%;
 	background: #d3d8f2;
 	color: #000;
+	a{
+		color: #000;
+		opacity: .6;
+		-webkit-transition:.9s;
+		-moz-transition:.9s;
+		transition:.9s;
+	}
+
+	a:hover{
+		color: #000;
+		opacity: 1;
+	}
 	.padding-0{
 		padding-left: 0;
 		padding-right: 0;
@@ -483,7 +538,14 @@ footer{
 	
 }
 
+
 @media  (min-width: 548px){
+	#skillsImgPage{
+		#imageDisplay{
+			width: auto;
+		}
+	}
+	
 	#home {
 	
 	}
@@ -492,8 +554,34 @@ footer{
 			width: 300px
 		}
 	}
+	#hireMePage{
+		.textWrapper{
+			// text-align: center;
+			// margin: 0 auto;
+			width: 60%;
+		}
+
+		p{
+			font-size:1.8rem;
+		}
+		#startContact{
+			float: none;
+		}
+	}
+}
+@media(min-width: 750px){
+	.contactForm {
+		#contactHeading{
+			font-size:3.4rem;
+		
+		}
+	}
 }
 @media (min-width: 1148px){
+
+	.formContainer{
+		width: 600px;
+	}
 	#home{
 		position: relative;
 		// .mgWrapper{
@@ -549,6 +637,7 @@ footer{
 				font-size: 1.6rem;
 				padding: 10px 15px;
 				// padding: 20px;
+
 			}
 			#aboutMe{
 				margin-top: 20px;
@@ -567,5 +656,12 @@ footer{
 			}
 		}
 
+	}
+	#hireMePage{
+		img{
+				position: relative;
+				height: 630px;
+				margin: 0;
+				}
 	}
 }
