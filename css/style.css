@@ -371,6 +371,7 @@ section {
   color: #dfe6e9;
 }
 #hireMePage {
+  position: relative;
   overflow: hidden;
   background: linear-gradient(to bottom left, #ff6a00, #ee0979);
   color: #d3d8f2;
@@ -400,7 +401,11 @@ section {
 #hireMePage img {
   height: 530px;
   position: absolute;
-  left: -30px;
+  /*left: -30px;*/
+  /*top:0;
+  bottom:0;
+  right: 0;
+  left: 0;*/
   margin-top: 70px;
 }
 #hireMePage .textWrapper {
@@ -528,15 +533,14 @@ footer .col-xs-2 {
     object-fit: contain;
     height: 1261px;
     margin-top: 11px;
-    padding-right: 300px;
   }
   #home #img-bg #logo {
     visibility: hidden;
     transition: all 0.2s;
   }
-  #hireMePage img {
+  /*#hireMePage img {
     position: relative;
     height: 630px;
     margin: 0;
-  }
+  }*/
 }
